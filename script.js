@@ -5,7 +5,7 @@ Shery.hoverWithMediaCircle(".hvr", {
 	videos: ["./assets/0.mp40", "./assets/2.mp4", "./assets/3.mp4"],
 });
 
-gsap.to(".fleftelm", {
+gsap.to(".fleftlm", {
 	scrollTrigger: {
 		trigger: "#fimages",
 		pin: true,
