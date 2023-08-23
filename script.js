@@ -1,1 +1,2 @@
+// Shery.mouseFollower();
 Shery.mouseFollower();
