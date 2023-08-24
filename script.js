@@ -30,6 +30,7 @@ Shery.imageEffect(".images", {
 				start: "top top",
 				scrub: 1,
 				onUpdate: function (prog) {
+					console.log(prog);
 					setScroll(prog.progress + index);
 				},
 			});
