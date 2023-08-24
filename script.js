@@ -4,9 +4,9 @@ Shery.makeMagnet(".magnet");
 Shery.hoverWithMediaCircle(".hvr", {
 	videos: ["./assets/0.mp4", "./assets/2.mp4", "./assets/3.mp4"],
 });
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);  //add the scrolltrigger 
 gsap.to(".fleftlm", {
-	scrollTrigger: {
+	ScrollTrigger: {
 		trigger: "#fimages",
 		pin: true,
 		start: "top top",
