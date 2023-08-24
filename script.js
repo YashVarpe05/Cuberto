@@ -26,11 +26,11 @@ Shery.imageEffect(".images", {
 	slideStyle: (setScroll) => {
 		sections.forEach(function (section, index) {
 			ScrollTrigger.create({
+				//scroll trigger starting
 				trigger: section,
 				start: "top top",
 				scrub: 1,
 				onUpdate: function (prog) {
-					console.log(prog);
 					setScroll(prog.progress + index);
 				},
 			});
