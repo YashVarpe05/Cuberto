@@ -1,3 +1,5 @@
+const { ScrollSpy } = require("bootstrap");
+
 // Shery.mouseFollower();
 Shery.mouseFollower();
 Shery.makeMagnet(".magnet");
@@ -17,11 +19,22 @@ gsap.to(".fleftlm", {
 	y: "-300%",
 	ease: Power1,
 });
-// shery.imageEffext(".image", {
-// 	style: 5,
-// 	slideStyle: (setScroll) => {
-// 		window.addEventListener("scroll", () => {
-// 			setScroll(window.scrollY / innerHeight);
-// 		});
-// 	},
-// });
+
+let sections = document.querySelectorAll(".fleftlm");
+
+Shery.imageEffext(".images", {
+	style: 5,
+	config: { onMouse: { value: 1 } },
+	slideStyle: (setScroll) => {
+		sections.forEach(function (section, index) {
+			scrollTrigger.create({
+				trigger: section,
+				start: "top top",
+				scrub: 1,
+				onUpdate: function (prog) {
+					setScroll(prog.progress + index);
+				},
+			});
+		});
+	},
+});
