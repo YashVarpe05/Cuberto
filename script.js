@@ -20,7 +20,7 @@ gsap.to(".fleftlm", {
 
 let sections = document.querySelectorAll(".fleftlm");
 
-Shery.imageEffext(".images", {
+Shery.imageEffect(".images", {
 	style: 5,
 	config: { onMouse: { value: 1 } },
 	slideStyle: (setScroll) => {
