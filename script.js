@@ -25,7 +25,7 @@ Shery.imageEffect(".images", {
 	config: { onMouse: { value: 1 } },
 	slideStyle: (setScroll) => {
 		sections.forEach(function (section, index) {
-			scrollTrigger.create({
+			ScrollTrigger.create({
 				trigger: section,
 				start: "top top",
 				scrub: 1,
