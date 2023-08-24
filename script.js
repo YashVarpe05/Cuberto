@@ -4,9 +4,9 @@ Shery.makeMagnet(".magnet");
 Shery.hoverWithMediaCircle(".hvr", {
 	videos: ["./assets/0.mp4", "./assets/2.mp4", "./assets/3.mp4"],
 });
-gsap.registerPlugin(ScrollTrigger);  //add the scrolltrigger 
+gsap.registerPlugin(ScrollTrigger); //add the scrolltrigger
 gsap.to(".fleftlm", {
-	ScrollTrigger: {
+	scrollTrigger: {
 		trigger: "#fimages",
 		pin: true,
 		start: "top top",
@@ -21,7 +21,7 @@ gsap.to(".fleftlm", {
 let sections = document.querySelectorAll(".fleftlm");
 
 Shery.imageEffect(".images", {
-	style: 1,
+	style: 4,
 	config: { onMouse: { value: 1 } },
 	slideStyle: (setScroll) => {
 		sections.forEach(function (section, index) {
