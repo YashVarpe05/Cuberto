@@ -1,5 +1,3 @@
-const { ScrollSpy } = require("bootstrap");
-
 // Shery.mouseFollower();
 Shery.mouseFollower();
 Shery.makeMagnet(".magnet");
